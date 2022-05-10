@@ -72,13 +72,14 @@ function Footer() {
 export default Footer;
 
 const FooterLayout = styled.div`
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   bottom: 0;
   width: 100%;
+  margin-top: 100px;
 `;
 
 const Wrapper = styled.div`
