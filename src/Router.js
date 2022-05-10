@@ -7,6 +7,8 @@ import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import ProductList from "./pages/ProductList/ProductList";
 import LogIn from "./pages/User/LogIn/LogIn";
 import SignUp from "./pages/User/SignUp/SignUp";
+// import Payment from "./pages/User/Payment/Payment";
+
 function Router() {
   return (
     <div>
@@ -15,9 +17,10 @@ function Router() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/products:id" element={<ProductList />} />
-          <Route path="/productDetail/:id" element={<ProductDetail />} />
+          <Route path="/productDetail" element={<ProductDetail />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/signup" element={<SignUp />} />
+          {/* <Route path="/payment" element={<Payment />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>
