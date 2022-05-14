@@ -5,6 +5,7 @@ import Nav from "./components/Nav/Nav";
 import Main from "./pages/Main/Main";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import ProductList from "./pages/ProductList/ProductList";
+import Payment from "./pages/Payment/Payment";
 import LogIn from "./pages/User/LogIn/LogIn";
 import SignUp from "./pages/User/SignUp/SignUp";
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
           <Route path="/" element={<Main />} />
           <Route path="/products:id" element={<ProductList />} />
           <Route path="/productDetail" element={<ProductDetail />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
