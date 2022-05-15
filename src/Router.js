@@ -7,6 +7,7 @@ import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import ProductList from "./pages/ProductList/ProductList";
 import LogIn from "./pages/User/LogIn/LogIn";
 import SignUp from "./pages/User/SignUp/SignUp";
+import Mypage from "./pages/Mypage/Mypage";
 function Router() {
   return (
     <div>
@@ -18,6 +19,7 @@ function Router() {
           <Route path="/productDetail" element={<ProductDetail />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/Mypage" element={<Mypage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
